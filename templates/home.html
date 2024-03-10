@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Techno-SIS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      font-family: times new roman;
+      font-weight: big;
+      color: mediumseagreen
+    }
+
+
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      font-family: times new roman;
+      font-weight: big;
+      color: orange;
+
+    }
+
+    p {
+      font-weight: normal;
+      font-family: arial;
+      font-size: 15px;
+      text-indent: 50px;
+
+    }
+
+    #banner {
+      width: 100%;
+      height: 600px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+      margin-bottom: 15px
+    }
+
+
+    .navbar-brand {
+      font-size: 35px;
+      font-family: times new roman;
+      font-weight: big;
+      color: orange;
+
+    }
+
+    h5 {
+
+      font-size: 20px;
+      font-family: times new roman;
+      font-weight: big;
+      color: slateblue
+    }
+
+    h4 {
+
+      font-size: 25px;
+      font-family: times new roman;
+      font-weight: big;
+      color: deeppink;
+      text-align: center
+    }
+
+    .background-container {
+      background-image: url(static\monitor-change-what-is-gis-image-switcher.jpg);
+    }
+
+    .py-3 my-4 {
+      color: pink
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="background-container"></div>
+  {% include 'nav.html'%}
+
+  <h1 class="text-center mt-2 mb-4">Techno-SIS</h1>
+  <img class="img-fluid" id="banner" src=static\monitor-change-what-is-gis-image-switcher.jpg alt="job image">
+
+  <br>
+  {% include 'scrollspy.html' %}
+
+</body>
+<footer>
+  {% include 'footer.html' %}
+</footer>
+
+</html>
